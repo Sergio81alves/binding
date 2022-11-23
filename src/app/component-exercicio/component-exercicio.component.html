@@ -1,0 +1,10 @@
+<h2>Palavra: {{palavra}}</h2>
+<p>My favorit color is {{color}} </p>
+<input type="text" [value]="value">
+<br> <br>
+<button [disabled]="isdisabled">botão</button>
+<br><br>
+
+<p [attr.aria-label]="isdisabled ? 'Botao desabilitado' :accessibilityText">texto qualquer</p>
+
+<img [src]="urlImagem">
