@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentExercicioComponent } from './component-exercicio/component-exercicio.component';
 import { ComponentHeaderComponent } from './component-header/component-header.component';
+import { ExercicioContadorComponent } from './exercicio-contador/exercicio-contador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentExercicioComponent,
-    ComponentHeaderComponent
+    ComponentHeaderComponent,
+    ExercicioContadorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,17 @@
+<!--Exemplo de Event Bilding-->
+<button (click)="onClickBotaoEmissor($event)">
+        Botão emissor
+</button>
+<br>
+<hr>
+
+<!--Event Binding-->
+<button (click)="clicou($event)">Clique em mim! </button> <br>
+<input type="text" [value]="valorDoInput" (mouseup)="PassouMouse()" (keyup)="clicado($event)"> <br>
+Valor Do Input: {{valorDoInput}}
+
+<hr>
+            <!--Event Binding-->
 <h2>Palavra: {{palavra}}</h2>
 <p>My favorit color is {{color}} </p>
 <input type="text" [value]="value">

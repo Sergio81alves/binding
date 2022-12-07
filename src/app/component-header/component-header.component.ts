@@ -7,7 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ComponentHeaderComponent implements OnInit {
   @Input() h1: any;
-  constructor() { }
+
+  constructor() {
+    setTimeout(() => {
+      this.h1 = 'Mudamos para portuges'
+    }, 5000);
+   }
 
   ngOnInit(): void {
   }
