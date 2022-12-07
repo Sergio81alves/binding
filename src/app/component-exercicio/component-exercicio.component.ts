@@ -28,6 +28,11 @@ export class ComponentExercicioComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  valorAtualizadoNoContador(novoValor:any){
+    console.log('o novo valor é ', novoValor)
+  }
+  
   clicou($event: any){
     console.log('Clicou!', $event);
   }

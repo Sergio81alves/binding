@@ -1,3 +1,10 @@
+<!--Exemplo de both-->
+<app-exercicio-contador
+[valor]="10"
+(valorMudou)="valorAtualizadoNoContador($event)"
+></app-exercicio-contador>
+<br> <hr>
+
 <!--Exemplo de Event Bilding-->
 <button (click)="onClickBotaoEmissor($event)">
         Botão emissor
