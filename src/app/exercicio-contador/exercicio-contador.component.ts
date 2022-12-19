@@ -9,15 +9,15 @@ import { Component, EventEmitter, Input, Output  } from '@angular/core';
 export class ExercicioContadorComponent{
 
   @Input() valor = 0
-  @Output() valorMudou = new EventEmitter
+  @Output() valorChange = new EventEmitter();
 
-  incrementrar(){
+  incrementrar(): void{
     this.valor ++;
-    this.valorMudou.emit(this.valor);
+    this.valorChange.emit(this.valor);
   }
   decrementrar(){
     this.valor--;
-    this.valorMudou.emit(this.valor);
+    this.valorChange.emit(this.valor);
   }
 
 }

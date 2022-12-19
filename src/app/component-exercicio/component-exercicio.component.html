@@ -1,7 +1,7 @@
 <!--Exemplo de both-->
+valor Contador: {{ valorContador }}
 <app-exercicio-contador
-[valor]="10"
-(valorMudou)="valorAtualizadoNoContador($event)"
+[(valor)]="valorContador"
 ></app-exercicio-contador>
 <br> <hr>
 

@@ -9,7 +9,8 @@ export class ComponentExercicioComponent implements OnInit {
   @Input() palavra: any;
   @Input() color: any;
   @Output() clicad = new EventEmitter();
-
+  
+  valorContador = 10
   title = 'data_victor';
   urlImagem = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Castillo_de_Eilean_Donan_%28Escocia%29.jpg/800px-Castillo_de_Eilean_Donan_%28Escocia%29.jpg?20110823110615';
 
@@ -29,9 +30,6 @@ export class ComponentExercicioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  valorAtualizadoNoContador(novoValor:any){
-    console.log('o novo valor é ', novoValor)
-  }
   
   clicou($event: any){
     console.log('Clicou!', $event);
