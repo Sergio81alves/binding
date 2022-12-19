@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './exercicio-diretivas.component.html',
   styleUrls: ['./exercicio-diretivas.component.css']
 })
-export class ExercicioDiretivasComponent implements OnInit {
+export class ExercicioDiretivasComponent {
 
-  constructor() { }
+  condition = true;
 
-  ngOnInit(): void {
+
+  trocarValor(){
+    this.condition = !this.condition;
+     
   }
-
 }

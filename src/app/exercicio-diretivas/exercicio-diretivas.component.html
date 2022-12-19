@@ -1,1 +1,13 @@
-<p>exercicio-diretivas works!</p>
+<p>o valor dentro do deve exibir é {{condition}}</p>
+<button (click)="trocarValor()">
+trocar valor
+</button>
+<div *ngIf="condition; else blocoseNao">Olá estou dentro do ngIf </div>
+
+<div *ngIf="condition; else blocoseNao">Content to render when condition is true.
+</div>
+<ng-template #blocoseNao> <p> Quando deve exibir for falso.</p></ng-template>
+<!--se tiver dois com elses com os nomes iguais eles talvez não dão erros mais também não aparecerar na tela sempre trocar os nomes-->
+<div *ngIf="condition; then thenBlock else blocoseNao2"></div>
+<ng-template #thenBlock> <p> Bloco true do ng template</p></ng-template>
+<ng-template #blocoseNao2> <p> ..Block false do ng template.</p></ng-template>
