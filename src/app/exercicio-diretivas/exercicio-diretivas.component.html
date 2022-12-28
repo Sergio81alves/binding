@@ -4,10 +4,36 @@ trocar valor
 </button>
 <div *ngIf="condition; else blocoseNao">Olá estou dentro do ngIf </div>
 
-<div *ngIf="condition; else blocoseNao">Content to render when condition is true.
+
+<div *ngIf="condition; else blocoseNao"> <img  width="150" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/10/cachoeiras-santa-barbara-chapada-dos-veadeiros-01.jpg" alt="">
 </div>
 <ng-template #blocoseNao> <p> Quando deve exibir for falso.</p></ng-template>
 <!--se tiver dois com elses com os nomes iguais eles talvez não dão erros mais também não aparecerar na tela sempre trocar os nomes-->
 <div *ngIf="condition; then thenBlock else blocoseNao2"></div>
 <ng-template #thenBlock> <p> Bloco true do ng template</p></ng-template>
-<ng-template #blocoseNao2> <p> ..Block false do ng template.</p></ng-template>
+<ng-template #blocoseNao2> <p> <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IfyjmOtfoZcqqmKnknJ9I_sgzc9FecwzgA&usqp=CAU" alt=""></p></ng-template>
+
+<hr>
+
+<ul>
+    <li *ngFor="let fruta of listaFrutas">{{fruta}}</li>
+</ul>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <td>Placa</td>
+            <td>Cor</td>
+        </tr>
+        
+        
+    </thead>
+    <tbody *ngFor="let carro of ListaCarros; let i = index">
+      <tr>
+        <th scope="row">{{i +1}}</th>
+        <td>{{carro.placa}}</td>
+        <td>{{carro.cor}}</td>
+      </tr>
+    </tbody>
+  </table>
