@@ -1,0 +1,12 @@
+<ul *ngFor="let meme of MEMES_AGRUPADOS_POR_CATEGORIA; let i = index">
+    <li>{{i +1}}</li>
+    <li>{{meme.categoria}}
+
+        <div *ngFor="let memesImg of meme.memes; let par = even">
+            <img [src]="  IMAGENS_AGRUPADAS + memesImg.imagemURL" *ngIf="par; ">
+           
+              <h2 *ngIf="!par">PAR</h2>
+        </div>
+    </li>
+    
+</ul>
