@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-exercicio-diretivas',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExercicioDiretivasComponent {
 
+  
   listaFrutas = [
     'Maçã',
     'Laranja',
@@ -43,3 +44,4 @@ export class ExercicioDiretivasComponent {
      
   }
 }
+
