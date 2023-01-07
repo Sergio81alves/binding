@@ -8,6 +8,7 @@ import { ComponentHeaderComponent } from './component-header/component-header.co
 import { ExercicioContadorComponent } from './exercicio-contador/exercicio-contador.component';
 import { ExercicioDiretivasComponent } from './exercicio-diretivas/exercicio-diretivas.component';
 import { MemesComponent } from './memes/memes.component';
+import { ExercicioNgclassComponent } from './exercicio-ngclass/exercicio-ngclass.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MemesComponent } from './memes/memes.component';
     ComponentHeaderComponent,
     ExercicioContadorComponent,
     ExercicioDiretivasComponent,
-    MemesComponent
+    MemesComponent,
+    ExercicioNgclassComponent
   ],
   imports: [
     BrowserModule,
