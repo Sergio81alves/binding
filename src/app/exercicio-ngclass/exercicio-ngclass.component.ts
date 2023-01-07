@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './exercicio-ngclass.component.html',
   styleUrls: ['./exercicio-ngclass.component.css']
 })
-export class ExercicioNgclassComponent implements OnInit {
+export class ExercicioNgclassComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  deveSerVerde = false;
+  tornarVerde(){
+    this.deveSerVerde = true;
   }
+ 
 
 }

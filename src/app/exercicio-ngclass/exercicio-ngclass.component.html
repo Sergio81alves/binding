@@ -1,2 +1,5 @@
+<button (click)="tornarVerde()">button</button>
 
-<h1 class="verde">amanha</h1>
+<h1 [ngClass]=" deveSerVerde ? 'verde' :'vermelho'">amanha</h1>
+
+<p [class.verde]="deveSerVerde">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, ratione ipsa facilis dolorem laudantium maxime modi perferendis doloribus aspernatur rerum voluptatem.</p>
