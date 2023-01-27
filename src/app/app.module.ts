@@ -9,6 +9,7 @@ import { ExercicioContadorComponent } from './exercicio-contador/exercicio-conta
 import { ExercicioDiretivasComponent } from './exercicio-diretivas/exercicio-diretivas.component';
 import { MemesComponent } from './memes/memes.component';
 import { ExercicioNgclassComponent } from './exercicio-ngclass/exercicio-ngclass.component';
+import { ExercicioPipesComponent } from './exercicio-pipes/exercicio-pipes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExercicioNgclassComponent } from './exercicio-ngclass/exercicio-ngclass
     ExercicioContadorComponent,
     ExercicioDiretivasComponent,
     MemesComponent,
-    ExercicioNgclassComponent
+    ExercicioNgclassComponent,
+    ExercicioPipesComponent
   ],
   imports: [
     BrowserModule,

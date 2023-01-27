@@ -9,12 +9,14 @@ export class ComponentHeaderComponent implements OnInit {
   @Input() h1: any;
 
   constructor() {
+    console.log('constructor')
     setTimeout(() => {
       this.h1 = 'Mudamos para portuges'
     }, 5000);
    }
 
   ngOnInit(): void {
+    console.log('ngOnInit')
   }
 
 }
